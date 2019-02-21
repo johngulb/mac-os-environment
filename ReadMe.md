@@ -1,22 +1,16 @@
 ## [Oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 
-#### [Autocomplete](https://gist.github.com/dogrocker/1efb8fd9427779c827058f873b94df95)
-`git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+`sh install/oh-my-zsh.sh`
 
+### Setup oh my zsh, plugins/themes
 
-#### [Odin Theme](https://github.com/tylerreckart/odin.git)
-`git clone https://github.com/tylerreckart/odin.git $ZSH_CUSTOM/odin`
+`sh install/oh-my-zsh-setup.sh`
 
-`cd ~/.oh-my-zsh/custom/odin`
-
-`cp ./odin.zsh-theme ~/.oh-my-zsh/themes/odin.zsh-theme`
-
-Create zshrc file
-`vim ~/.zshrc`
+* [Autocomplete](https://gist.github.com/dogrocker/1efb8fd9427779c827058f873b94df95)
+* [Odin Theme](https://github.com/tylerreckart/odin.git)
 
 ## [Homebrew](https://brew.sh/)
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+`sh install/brew.sh`
 
 ## NVM
 `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash`
