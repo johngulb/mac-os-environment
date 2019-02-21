@@ -29,3 +29,11 @@ Create zshrc file
 `nvm use 10.5.0`
 
 `npm install -g yarn ember`
+
+## PHP
+
+#### [Composer](https://getcomposer.org/doc/00-intro.md)
+`sh install/composer.sh`
+
+#### [PHP Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
+`sh install/php-fixer.sh`
