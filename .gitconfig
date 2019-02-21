@@ -1,0 +1,28 @@
+[user]
+	name = John Gulbronson
+	email = johngulb@gmail.com
+[alias]
+	s = status
+	u = reset --soft HEAD^
+	c = checkout
+	br = branch
+	brm = branch -m
+	bl = branch -l
+	cm = commit -m
+	aa = add -A
+[push]
+	default = simple
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	editor = /usr/bin/vim
+	excludesfile = /Users/john/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
